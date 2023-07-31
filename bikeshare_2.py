@@ -3,6 +3,14 @@ import datetime
 import pandas as pd
 import numpy as np
 
+"""
+bikeshare_2.py 
+Author: Joachim Kallenbach
+Project for Udacity Nanodegree "Data Science with Python"
+Submitted: July, 23rd 2023
+"""
+
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -25,30 +33,30 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!\n')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
        city = input("Enter the city (one of Chicago, New York City, Washington): ")
        if city.lower() in CITY_DATA:
-          print("City {} is chosen".format(city.title()))
+          print("City {} is chosen\n".format(city.title()))
           break
        else:
-          print("Sorry - city {} is not a valid city!".format(city.title()))
+          print("Sorry - city {} is not a valid city!\n".format(city.title()))
 
     while True:
        month = input("Would you like to filter by month? Please enter the name of the month to filter by, or ""all"" to apply no month filter: ")
        if month.lower() in MONTHS:
-          print("Month {} is chosen".format(month.title()))
+          print("\nMonth {} is chosen".format(month.title()))
           break
        else:
-          print("Sorry - {} is not a month city!".format(month.title()))
+          print("\nSorry - {} is not a month city!".format(month.title()))
 
 
     while True:
        try:
-          day = int(input("Please enter day as an integer (Monday = 1), 0 if you don't want to filter by day: "))
+          day = int(input("\nPlease enter day as an integer (Monday = 1), 0 if you don't want to filter by day: "))
        except ValueError:
-          print("Invalid integer (0-7!")
+          print("\nInvalid integer (0-7!")
        if day in (0,1,2,3,4,5,6,7):
           print('-'*40)
           return city, month, day
