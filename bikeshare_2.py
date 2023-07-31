@@ -75,9 +75,6 @@ def load_data(city, month, day):
     """
     try:
         df = pd.read_csv('{}.csv'.format(city.title().replace(" ", "_")))
-        #print('df is of type:', type(df))
-        #print('df has shape:', df.shape)
-        #print(df['User Type'].value_counts())        
     except:
         print('df went wrong:')
         exit()
@@ -89,14 +86,12 @@ def load_data(city, month, day):
     if month != "all":
        print("Filter by month {}".format(month.title()))
        df['Start Time'] = pd.to_datetime(df['Start Time'])
-       df = df[df['Start Time'].dt.month == MONTHS[month]] 
-       #print(df)
+       df = df[df['Start Time'].dt.month == MONTHS[month.lower()]] 
     if day != 0:
        print("Filter by day ", day)
        df['Start Time'] = pd.to_datetime(df['Start Time'])
        df['day_of_week'] = df['Start Time'].dt.day_name()
        df = df[df['Start Time'].dt.dayofweek == day-1] 
-       #print(df)
     return df
 
 def display_raw_data(df):
