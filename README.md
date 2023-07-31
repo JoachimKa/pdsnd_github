@@ -30,5 +30,12 @@ python bikeshare.py
  - README.md (this file) - 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Many thanks to
+| Site |  |
+| ------ | ------ |
+|https://stackoverflow.com/| for a lot of answers and hints)|
+|https://realpython.com/| for some nice insights|
+|https://www.grund-wissen.de/informatik/python/scipy/pandas.html|for great explanations on Pandas
+|Book:
+| Python - Der Grundkurs by Michael Kofler Rheinwerk Verlag ISBN 978-3-8362-6679-6|Thanks to Michael for writing this nice book| 
 
