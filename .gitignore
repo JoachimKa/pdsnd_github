@@ -1,1 +1,6 @@
+# ignore files in .github directory
 .github/**
+# ignore data files
+chicago.csv
+new_york_city.csv
+washington.csv
