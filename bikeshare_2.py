@@ -3,6 +3,14 @@ import datetime
 import pandas as pd
 import numpy as np
 
+"""
+bikeshare_2.py 
+Author: Joachim Kallenbach
+Project for Udacity Nanodegree "Data Science with Python"
+Submitted: July, 23rd 2023
+"""
+
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
