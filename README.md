@@ -9,7 +9,7 @@ Statistics on your fingers tips
 ### What's this about?
 Bikeshare provided data files from three cities they offer their services
 - Chicago
-- Washington
+- Washington  (unfortunately there are no data about gender and year of birth available)
 - New York City
 
 With bikeshare.py you choose the city you want to get some statistics from. Additionally you can choose month and day of week you are interested in. Of course it's also possible to choose all months alls days.
