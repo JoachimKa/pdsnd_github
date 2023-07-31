@@ -4,10 +4,10 @@
 ### Started at July 15th 2023
 ### Submitted at July 23rd 2023
 
-### Bikeshare - some insights in data 
+### Bikeshare - some insights in sharing data 
 Statistics on your fingers tips
 ### What's this about?
-Bikeshare provided some data files from three city they offer their services
+Bikeshare provided data files from three cities they offer their services
 - Chicago
 - Washington
 - New York City
@@ -19,7 +19,7 @@ To make it work please ensure you have added the following data files and bikesh
 - washington.csv
 
 ### How to start
-Assuming you added bikeshare.py ad the data files in /py/bikeshare:
+Assuming you added bikeshare.py and the data files in directory /py/bikeshare:
 ```sh
 cd /py/bikeshare
 python bikeshare.py
